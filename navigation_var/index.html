@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Scroll progress bar</title>
+<link rel=stylesheet href=styles.css>
+</head>
+<body>
+<div id="progressbar"></div>
+<div id="scrollPath"></div>
+<section>
+    <h2>Scroll progress bar</h2>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nulla aliquet porttitor lacus luctus accumsan tortor. Congue eu consequat ac felis donec et. Tempus quam pellentesque nec nam aliquam sem et tortor consequat. Fringilla urna porttitor rhoncus dolor. Massa sed elementum tempus egestas sed sed risus pretium quam. Id aliquet lectus proin nibh nisl. Cursus eget nunc scelerisque viverra mauris in. Cursus metus aliquam eleifend mi in nulla. Faucibus a pellentesque sit amet porttitor eget. In est ante in nibh. Morbi leo urna molestie at elementum eu facilisis sed odio. Duis ut diam quam nulla porttitor. Dui id ornare arcu odio ut sem nulla. Diam quam nulla porttitor massa id neque aliquam
+        Vitae tempus quam pellentesque nec nam aliquam sem et. Dui ut ornare lectus sit amet. Amet nisl purus in mollis nunc. Mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor. Tellus elementum sagittis vitae et. Amet consectetur adipiscing elit ut aliquam purus. Enim sit amet venenatis urna cursus. Id venenatis a condimentum vitae. Id ornare arcu odio ut. Tincidunt tortor aliquam nulla facilisi cras. Facilisi nullam vehicula ipsum a arcu cursus.
+        Nec feugiat in fermentum posuere urna nec tincidunt praesent semper. Ipsum dolor sit amet consectetur adipiscing. Nibh mauris cursus mattis molestie a. Pulvinar mattis nunc sed blandit libero volutpat sed cras ornare. Nulla facilisi nullam vehicula ipsum. Ac tincidunt vitae semper quis lectus. Nunc faucibus a pellentesque sit. Erat nam at lectus urna duis convallis convallis. Et malesuada fames ac turpis. Quis auctor elit sed vulputate. Vestibulum morbi blandit cursus risus. Tincidunt id aliquet risus feugiat in. Integer vitae justo eget magna fermentum. Quisque sagittis purus sit amet volutpat consequat mauris. Volutpat diam ut venenatis tellus in. In massa tempor nec feugiat nisl pretium fusce id velit.
+        Quam pellentesque nec nam aliquam. Sodales ut etiam sit amet nisl purus. Amet tellus cras adipiscing enim eu. Tincidunt praesent semper feugiat nibh sed pulvinar proin. Mollis nunc sed id semper risus. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Adipiscing bibendum est ultricies integer quis auctor. Sit amet consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Semper eget duis at tellus at urna condimentum mattis pellentesque. Tortor at auctor urna nunc id cursus metus aliquam eleifend. Ornare arcu dui vivamus arcu felis bibendum. Eu non diam phasellus vestibulum lorem sed. Adipiscing bibendum est ultricies integer quis auctor elit. Rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Aliquet lectus proin nibh nisl condimentum id. At risus viverra adipiscing at in tellus integer.
+        Tellus in hac habit
+        </p>
+</section>
+<script type="text/javascript">
+    let progress = document.getElementById("progressbar");
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    window.onscroll = function(){
+    let progressHeight = (window.pageYOffset /totalHeight) * 100;
+    progress.style.height = progressHeight + "%";
+}
+
+
+</script>
+</body>
+</html>
